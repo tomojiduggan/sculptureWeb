@@ -58,6 +58,20 @@ function onWindowResize() {
 }
 
 
+// Particles Place
+
+const particlesGeometry = new THREE.SphereGeometry(1, 32, 32)
+
+const particlesMaterial = new THREE.PointsMaterial({
+    size: 0.02,
+    sizeAttenuation: true
+})
+
+const particles = new THREE.Points(particlesGeometry, particlesMaterial)
+scene.add(particles)
+
+// Particles Finish
+
 function render() {
     renderer.render(scene, camera)
 }
