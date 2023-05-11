@@ -1,4 +1,7 @@
-
+// declare module '*.glb' {
+//     const src: string
+//     export default src
+// }
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'

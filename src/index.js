@@ -1,3 +1,8 @@
+import * as THREE from 'three'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import file3d from '../src/room.glb?url'
+
 let introBool = false
 
 function intro() {
@@ -15,9 +20,8 @@ function intro() {
 
 
 
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+
+
 
 const scene = new THREE.Scene()
 
@@ -69,7 +73,7 @@ async function loadGltf(url){
     let gltf = await loader.loadAsync(url)
     scene.add(gltf.scene)
 }
-loadGltf('./src/room.glb')
+loadGltf(file3d)
 
 
 window.addEventListener('resize', onWindowResize, false)
