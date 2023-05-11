@@ -25,7 +25,10 @@ body{
     height: 100vh;
     padding: 5% 10vw 0 10vw;
     color: rgb(0, 2, 148);
+    font-size: 20px;
+    text-shadow: 3px 3px white;
 }
+
 
 .page{
     position: absolute;
