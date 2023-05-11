@@ -53,7 +53,7 @@ async function loadGltf(url){
     let gltf = await loader.loadAsync(url)
     scene.add(gltf.scene)
 }
-loadGltf('./room.glb')
+loadGltf('/src/room.glb')
 
 
 window.addEventListener('resize', onWindowResize, false)

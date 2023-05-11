@@ -1,5 +1,5 @@
-
 let introBool = false
+
 function intro() {
 
     if(!introBool){
