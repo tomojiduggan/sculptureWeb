@@ -40,7 +40,23 @@
         </p>
       </div>
     </div>
-    <script src="./src/index.js"></script>
+    <script>
+
+let introBool = false
+
+function intro() {
+
+    if(!introBool){
+        document.getElementById("introSlide").classList.add("active")
+        document.getElementById("button").classList.add("spin")
+        introBool = true
+    } else {
+        document.getElementById("introSlide").classList.remove("active")
+        document.getElementById("button").classList.remove("spin")
+        introBool = false
+    }
+}
+    </script>
 
     <script type="module" src="/src/main.js"></script>
   </body>
